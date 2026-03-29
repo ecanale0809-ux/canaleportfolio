@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      text-align: center;
+      padding: 1rem;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    .project a:hover {
+      color: #ff4081;
+    }
+    footer {
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HELLO, HI, MABUHAY THIS MY PORTFOLIO</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <img src="image/pic.jpeq.jpg" alt="My Picture" class="profile">
+      <p>HELLO EVERYONE IM EDMAR CANALE fROM BSIT-1C, CHECK MY PORTFOLIO TO GET SOME IDEA OR TO HELP YOU HTML AND CSS!!!</p>
+    </div>
+  </section>
+
+  <section id="beliefs">
+    <h2>I BELIEVE</h2>
+    <div class="card">
+      <p>• STUDYING IS LIKE GOLD, WITH AN IMMENSE VALUE.</p>
+      <p>• BE KIND TO OTHERS IF YOU WANT TO EXPERIENCE THE SAME FROM THEM.</p>
+      <p>• BEING A GOOD PERSON IS THE KEY TO BEING SUCCESSFUL.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <p>• I CAN USE HTML AND CSS TO MAKE WEBSITES.</p>
+      <p>• I CAN USE JAVA ALSO.</p>
+      <p>• BASICALLY I CAN COOK, EAT, SLEEP AND REPEAT.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3><a href="TASK1.html" target="_blank">TASK 1</a></h3>
+        <p>RESUME</p>
+      </div>
+      <div class="project">
+        <h3><a href="TASK2.html" target="_blank">TASK 2</a></h3>
+        <p>UNORDERED AND ORDERED LIST</p>
+      </div>
+      <div class="project">
+        <h3><a href="TASK3.html" target="_blank">TASK 3</a></h3>
+        <p>HTML FORM</p>
+      </div>
+      <div class="project">
+        <h3><a href="TASK4.html" target="_blank">TASK 4</a></h3>
+        <p>IMAGE MAP</p>
+      </div>
+      <div class="project">
+        <h3><a href="TASK5.html" target="_blank">TASK 5</a></h3>
+        <p>RESUME WITH CSS</p>
+      </div>
+      <div class="project">
+        <h3><a href="TASK6.html" target="_blank">TASK 6</a></h3>
+        <p>GOOGLE FORM</p>
+      </div>
+     <div class="project">
+        <h3><a href="TASK7.html" target="_blank">TASK 7</a></h3>
+        <p>SEMANTIC</p>
+      </div>
+  <div class="project">
+        <h3><a href="TASK8.html" target="_blank">TASK 8</a></h3>
+        <p>STYLESHEET</p>
+    </div>
+    </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>📧 canaleedmar0802@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Edmar Canale</p>
+  </footer>
+</body>
+</html>
